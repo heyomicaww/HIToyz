@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI-TOYZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="Gambar HI-TOYZ/newLogo-removebg.png" id="reg-logo">
+    <p id="reg">Register</p>
+    
+    <form action = "homepage.html" method="GET">
+        <label id="name" for="name">Name:</label>
+        <input id="name-b" type="text">
+        <br>
+        <label id="birth" for="birth">Date of Birth:</label>
+        <input id="birth-b" type="date">
+        <br>
+        <label id="email" for="email">Email:<br></label>
+        <input id="email-b" type="email">
+        <br>
+        <label id="agree" for="agree">I read and agree to <b>Terms & Conditions</b><br></label>
+        <input id="agree-b" type="checkbox">
+        <br>
+        <label id="password" for="password">Password:<br></label>
+        <input id="pass-b" type="password">
+        <p id="errorMsg" style="color: red; display: none;">Error</p>
+        <button id="but-reg" type="submit" onclick="validateData(event)">Register</button>
+    </form>
+    <script src="hi-toyz.js"></script>
+</body>
+</html>
